@@ -184,13 +184,13 @@ if page == "👤 Profile & Contact":
             st.image(str(photo_path), use_container_width=True)
         else:
         pdf_path = Path("linkedin_pp .png")
-            if pdf_path.exists():
-                st.download_button(
-                    "⬇️ Download my CV (PDF)",
-                    pdf_path.read_bytes(),
-                    file_name="CV_Apprenticeship_2025_Rishaa SURESHKUMAR.pdf",
-                    mime="application/pdf",
-                    use_container_width=True
+        if pdf_path.exists():
+            st.download_button(
+                "⬇️ Download my CV (PDF)",
+                pdf_path.read_bytes(),
+                file_name="CV_Apprenticeship_2025_Rishaa SURESHKUMAR.pdf",
+                mime="application/pdf",
+                use_container_width=True
                 )
 
     # ---------- WORK EXPERIENCE ----------
