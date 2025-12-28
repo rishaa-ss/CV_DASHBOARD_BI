@@ -163,7 +163,7 @@ if page == "👤 Profile & Contact":
         else:
             st.info("Add your photo: facecard.jpg")
             
-        pdf_path = Path("CV_Apprenticeship_2025_Rishaa SURESHKUMAR")
+        pdf_path = Path("CV_Apprenticeship_2025_Rishaa SURESHKUMAR.pdf")
         if pdf_path.exists():
             st.download_button(
                 "⬇️ Download my CV (PDF)",
