@@ -400,4 +400,4 @@ elif page == "🌍 Languages & Life":
 
     st.plotly_chart(fig, use_container_width=True)
 
-    st.success("✨ Thank you for visiting my CV dashboard!")
+    st.success("✨ Business Intelligence Academic Project")
