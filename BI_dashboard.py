@@ -162,8 +162,17 @@ if page == "👤 Profile & Contact":
             st.image(str(photo_path), use_container_width=True)
         else:
             st.info("Add your photo: facecard.jpg")
-
-
+            
+        pdf_path = Path("linkedin_pp .png")
+        if pdf_path.exists():
+            st.download_button(
+                "⬇️ Download my CV (PDF)",
+                pdf_path.read_bytes(),
+                file_name="Rishaa_CV_2025.pdf",
+                mime="application/pdf",
+                use_container_width=True
+            ) 
+            
     with right:
         st.markdown("<div class='hero-title'>Rishaa SureshKumar</div>", unsafe_allow_html=True)
         st.subheader(" 📍 Paris · 🔍 Data Apprenticeship Candidate  ·👩🏻‍💻 Engineering in Marketing & Data") 
@@ -180,15 +189,6 @@ if page == "👤 Profile & Contact":
         Jan–Mar: 2w company / 1w school  
         From April: Full-time in company
         """)
-    
-        if pdf_path.exists():
-            st.download_button(
-                "⬇️ Download my CV (PDF)",
-                pdf_path.read_bytes(),
-                file_name="CV_Apprenticeship_2025_Rishaa SURESHKUMAR.pdf",
-                mime="application/pdf",
-                use_container_width=True
-                )
 
     # ---------- WORK EXPERIENCE ----------
     st.markdown("## 💼 Work Experience")
