@@ -146,7 +146,7 @@ with st.sidebar:
     # ---------- Footer ----------
     st.markdown("---")  # Horizontal line
     st.markdown(
-        "This dashboard was created under the supervision of [Sir Mano Mathew](https://www.linkedin.com/in/mano-mathew)",
+        "This dashboard was created under the supervision of [Sir Mano Mathew](https://www.linkedin.com/in/manomathew/)",
         unsafe_allow_html=True
     )
 
