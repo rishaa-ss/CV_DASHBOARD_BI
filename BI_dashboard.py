@@ -168,7 +168,7 @@ if page == "👤 Profile & Contact":
             st.download_button(
                 "⬇️ Download my CV (PDF)",
                 pdf_path.read_bytes(),
-                file_name="CV_Apprenticeship_2025_Rishaa",
+                file_name="CV_Apprenticeship_2025_Rishaa.pdf",
                 mime="application/pdf",
                 use_container_width=True
             ) 
