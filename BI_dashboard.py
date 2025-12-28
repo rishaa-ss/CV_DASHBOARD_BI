@@ -180,10 +180,7 @@ if page == "👤 Profile & Contact":
         Jan–Mar: 2w company / 1w school  
         From April: Full-time in company
         """)
-        if photo_path.exists():
-            st.image(str(photo_path), use_container_width=True)
-        else:
-        pdf_path = Path("linkedin_pp .png")
+    
         if pdf_path.exists():
             st.download_button(
                 "⬇️ Download my CV (PDF)",
