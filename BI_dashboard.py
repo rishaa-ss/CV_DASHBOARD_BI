@@ -157,18 +157,18 @@ if page == "👤 Profile & Contact":
     left, right = st.columns([1, 2], gap="large")
 
     with left:
-        photo_path = Path("/Users/rishaa/Desktop/BI_streamlit/linkedin_pp .png")
+        photo_path = Path("linkedin_pp .png")
         if photo_path.exists():
             st.image(str(photo_path), use_container_width=True)
         else:
             st.info("Add your photo: facecard.jpg")
 
-        pdf_path = Path("/Users/rishaa/Desktop/BI_streamlit/linkedin_pp .png")
+        pdf_path = Path("linkedin_pp .png")
         if pdf_path.exists():
             st.download_button(
                 "⬇️ Download my CV (PDF)",
                 pdf_path.read_bytes(),
-                file_name="Rishaa_CV_2025.pdf",
+                file_name="CV_Apprenticeship_2025_Rishaa SURESHKUMAR.pdf",
                 mime="application/pdf",
                 use_container_width=True
             )
